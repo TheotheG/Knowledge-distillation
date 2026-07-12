@@ -1,0 +1,13 @@
+variant,precision,Legion_throughput,Legion_power_w,Legion_energy_mj,Legion_ppw,Jetson_throughput,Jetson_power_w,Jetson_energy_mj,Jetson_ppw
+baseline,FP32,1049,70.0,66.70,15.0,338,14.5,43.00,23.3
+baseline,FP16,1858,69.6,37.43,26.7,471,11.0,23.36,42.8
+baseline,INT8,1504,70.0,46.53,21.5,621,8.9,14.36,69.6
+logitKD,FP32,1069,69.9,65.41,15.3,338,14.2,42.03,23.8
+logitKD,FP16,1821,69.4,38.13,26.2,467,10.7,22.87,43.7
+logitKD,INT8,1521,70.0,45.98,21.7,617,8.8,14.28,70.0
+featureKD,FP32,1039,70.0,67.34,14.9,338,14.2,41.92,23.9
+featureKD,FP16,1830,69.5,37.96,26.3,475,10.7,22.47,44.5
+featureKD,INT8,1548,70.0,45.20,22.1,616,8.8,14.28,70.0
+featureHardKD,FP32,1025,69.9,68.26,14.7,339,14.2,41.88,23.9
+featureHardKD,FP16,1827,69.5,38.05,26.3,470,10.8,22.95,43.6
+featureHardKD,INT8,1549,70.0,45.18,22.1,617,8.8,14.29,70.0

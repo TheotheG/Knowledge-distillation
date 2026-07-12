@@ -1,0 +1,4 @@
+model,params_M,GMACs,GFLOPs
+ViT-B/16 (teacher),85.81,16.87,33.73
+EfficientNet-B0 (student),4.03,0.40,0.80
+compression (T/S),21.3x,42.4x,42.4x

@@ -1,0 +1,15 @@
+\begin{table}[h]
+\centering
+\caption{Architectural complexity of teacher and student. Parameters and compute depend only on architecture (precision-agnostic).}
+\label{tab:complexity_arch}
+\begin{tabular}{lccc}
+\toprule
+Model & Params (M) & GMACs & GFLOPs \\
+\midrule
+ViT-B/16 (teacher) & 85.81 & 16.87 & 33.73 \\
+EfficientNet-B0 (student) & 4.03 & 0.40 & 0.80 \\
+\midrule
+Compression (T/S) & $\times$21.3 & $\times$42.4 & $\times$42.4 \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,20 @@
+% Cross-device memory NOT comparable: Legion GPU-package (nvidia-smi) vs Jetson system-RAM (RSS). Peak host mem reported for Jetson only.
+\begin{table}[t]
+\centering
+\caption{Per-engine isolated cold-start and peak memory. Cold-start (\emph{ready}) is measured in a fresh subprocess (engine deserialise + execution-context creation + first inference) with a warm driver; values are medians across the four distillation variants (per-variant spread $\leq$0.01\,s). Launch (\emph{wall}) additionally includes interpreter and library import (the Legion path imports \texttt{torch} to preload \texttt{libcudart}). Peak host memory is reported for the Jetson (torch-free \texttt{polygraphy} runtime, system RAM); the Legion host footprint is dominated by the \texttt{torch}/CUDA runtime and its GPU-package memory (\texttt{nvidia-smi}) is coarse and does not resolve per variant ---see Table~\ref{tab:enginesizes} for static engine sizes. A one-time $\sim$2.6\,s driver/context initialisation is incurred once per cold GPU and amortised across all subsequent engines; it is excluded here.}
+\label{tab:mem}
+\begin{tabular}{llccc}
+\toprule
+Device & Prec. & Cold-start & Launch & Peak host \\
+ & & \emph{ready} (s) & \emph{wall} (s) & mem (MB) \\
+\midrule
+Legion & FP32 & 0.192 & 1.038 & -- \\
+ & FP16 & 0.182 & 1.028 & -- \\
+ & INT8 & 0.201 & 1.049 & -- \\
+\midrule
+Jetson & FP32 & 0.206 & 0.655 & 206 \\
+ & FP16 & 0.217 & 0.662 & 279 \\
+ & INT8 & 0.181 & 0.625 & 189 \\
+\bottomrule
+\end{tabular}
+\end{table}

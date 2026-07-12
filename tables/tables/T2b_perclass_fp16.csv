@@ -1,0 +1,9 @@
+device,variant,precision,Cardiomegaly,Edema,Consolidation,Atelectasis,Pleural Effusion,MACRO5
+legion,baseline,FP16,0.7850,0.8473,0.8070,0.6871,0.8490,0.7951
+legion,logitKD,FP16,0.8104,0.8984,0.9254,0.7698,0.9191,0.8646
+legion,featureKD,FP16,0.8122,0.8947,0.8915,0.7859,0.9062,0.8581
+legion,featureHardKD,FP16,0.7861,0.9065,0.9097,0.7633,0.9058,0.8543
+jetson,baseline,FP16,0.7861,0.8470,0.8073,0.6862,0.8499,0.7953
+jetson,logitKD,FP16,0.8106,0.8981,0.9254,0.7695,0.9194,0.8646
+jetson,featureKD,FP16,0.8118,0.8944,0.8911,0.7868,0.9057,0.8580
+jetson,featureHardKD,FP16,0.7861,0.9061,0.9088,0.7634,0.9057,0.8540

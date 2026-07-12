@@ -1,0 +1,26 @@
+% AUD = area-under-degradation over sigma in {0,1,2,3,4}; higher = less robust.
+% Retention = AUROC(sigma=4) / AUROC(sigma=0).
+\begin{table}[t]
+\centering
+\caption{Input robustness to Gaussian blur (MACRO(5) AUROC). Feature-KD is by far the most blur-robust; logit-KD degrades the most despite the highest clean accuracy. Curves replicate across devices ($\Delta<0.003$).}
+\label{tab:robust}
+\begin{tabular}{llccccc}
+\toprule
+Device & Variant & Prec. & Clean & $\sigma{=}2$ & $\sigma{=}4$ & AUD$\downarrow$ \\
+\midrule
+Legion & baseline & FP16 & 0.795 & 0.598 & 0.528 & 0.616 \\
+ & baseline & INT8 & 0.728 & 0.607 & 0.541 & 0.430 \\
+ & logit-KD & FP16 & 0.865 & 0.677 & 0.469 & 0.694 \\
+ & logit-KD & INT8 & 0.830 & 0.711 & 0.533 & 0.510 \\
+ & feature-KD & FP16 & 0.858 & 0.804 & 0.677 & 0.257 \\
+ & feature-KD & INT8 & 0.786 & 0.757 & 0.655 & 0.200 \\
+\midrule
+Jetson & baseline & FP16 & 0.795 & 0.598 & 0.527 & 0.619 \\
+ & baseline & INT8 & 0.739 & 0.605 & 0.556 & 0.456 \\
+ & logit-KD & FP16 & 0.865 & 0.677 & 0.469 & 0.693 \\
+ & logit-KD & INT8 & 0.833 & 0.703 & 0.533 & 0.518 \\
+ & feature-KD & FP16 & 0.858 & 0.804 & 0.678 & 0.255 \\
+ & feature-KD & INT8 & 0.793 & 0.763 & 0.660 & 0.205 \\
+\bottomrule
+\end{tabular}
+\end{table}

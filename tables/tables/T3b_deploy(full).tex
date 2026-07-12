@@ -1,0 +1,29 @@
+\begin{table}[t]
+\centering
+\caption{Deployment latency at batch=1: GPU-compute time (harness-independent: CUDA events on Legion, trtexec on Jetson), end-to-end latency, and engine load time. Peak memory differs in domain (Legion: GPU memory; Jetson: system RAM) and is reported in the text.}
+\label{tab:deploy}
+\begin{tabular}{llrrrrrr}
+\toprule
+Variant & Prec. & \multicolumn{3}{c}{\textbf{Legion}} & \multicolumn{3}{c}{\textbf{Jetson}} \\
+\cmidrule(lr){3-5} \cmidrule(lr){6-8}
+ &  & GPU\,(ms) & e2e\,(ms) & load\,(s) & GPU\,(ms) & e2e\,(ms) & load\,(s) \\
+\midrule
+Baseline & FP32 & 0.966 & 0.972 & 0.183 & 2.958 & 3.021 & 0.303 \\
+ & FP16 & 0.545 & 0.551 & 2.658 & 2.120 & 2.180 & 0.050 \\
+ & INT8 & 0.670 & 0.676 & 0.183 & 1.605 & 1.655 & 0.137 \\
+\addlinespace[2pt]
+Logit KD & FP32 & 0.936 & 0.942 & 0.179 & 2.953 & 3.017 & 0.292 \\
+ & FP16 & 0.552 & 0.558 & 0.177 & 2.136 & 2.196 & 0.220 \\
+ & INT8 & 0.663 & 0.668 & 0.179 & 1.616 & 1.669 & 0.129 \\
+\addlinespace[2pt]
+Feature KD & FP32 & 0.965 & 0.972 & 0.180 & 2.951 & 3.016 & 0.296 \\
+ & FP16 & 0.548 & 0.553 & 0.181 & 2.103 & 2.165 & 0.210 \\
+ & INT8 & 0.652 & 0.658 & 0.181 & 1.620 & 1.670 & 0.130 \\
+\addlinespace[2pt]
+Feat+Hard KD & FP32 & 0.978 & 0.985 & 0.183 & 2.950 & 3.013 & 0.301 \\
+ & FP16 & 0.556 & 0.561 & 0.181 & 2.123 & 2.183 & 0.207 \\
+ & INT8 & 0.687 & 0.728 & 0.178 & 1.617 & 1.670 & 0.130 \\
+\addlinespace[2pt]
+\bottomrule
+\end{tabular}
+\end{table}

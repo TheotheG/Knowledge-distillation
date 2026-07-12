@@ -1,0 +1,18 @@
+% Power domains NOT comparable: Legion=GPU-package (nvidia-smi), Jetson=board VDD_IN (tegrastats).
+\begin{table}[t]
+\centering
+\caption{Sustained-load thermal behaviour (logit-KD, 600\,s single-stream). Neither platform throttles; throughput is retained $\geq$99.4\%. Power domains are not directly comparable (Legion GPU-package vs.\ Jetson board VDD\_IN).}
+\label{tab:thermal}
+\begin{tabular}{llccccc}
+\toprule
+Device & Prec. & $T_{\rm start}$ & $T_{\rm steady}$ & $T_{\max}$ & Power & Thrpt.\ ret. \\
+ & & (°C) & (°C) & (°C) & (W) & (\%) \\
+\midrule
+Legion & FP16 & 56 & 60 & 65 & 69.0 & 99.4 \\
+ & INT8 & 58 & 60 & 64 & 69.3 & 99.5 \\
+\midrule
+Jetson & FP16 & 44 & 46 & 46 & 4.5 & 99.8 \\
+ & INT8 & 45 & 45 & 45 & 3.9 & 99.8 \\
+\bottomrule
+\end{tabular}
+\end{table}

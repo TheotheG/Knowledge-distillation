@@ -1,0 +1,17 @@
+\begin{table}[t]
+\centering
+\caption{On-disk TensorRT engine footprint (MB), batch=1, per precision and target device. All four students share the EfficientNet-B0 architecture; size varies with precision and TensorRT build target.}
+\label{tab:complexity_engines}
+\begin{tabular}{lcccccc}
+\toprule
+ & \multicolumn{3}{c}{Legion} & \multicolumn{3}{c}{Jetson} \\
+\cmidrule(lr){2-4} \cmidrule(lr){5-7}
+Variant & FP32 & FP16 & INT8 & FP32 & FP16 & INT8 \\
+\midrule
+Baseline (no KD) & 16.96 & 8.86 & 7.04 & 16.89 & 9.31 & 5.77 \\
+Logit KD & 16.98 & 8.84 & 7.04 & 16.67 & 9.30 & 5.82 \\
+Feature KD & 17.00 & 8.89 & 7.02 & 16.69 & 9.30 & 5.79 \\
+Feature+Hard KD & 17.09 & 8.95 & 7.05 & 16.91 & 9.31 & 5.82 \\
+\bottomrule
+\end{tabular}
+\end{table}

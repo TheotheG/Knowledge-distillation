@@ -1,0 +1,7 @@
+device,precision,coldstart_ready_s,launch_wall_s,peak_hostmem_mb
+legion,fp32,0.192,1.038,
+legion,fp16,0.182,1.028,
+legion,int8,0.201,1.049,
+jetson,fp32,0.206,0.655,206
+jetson,fp16,0.217,0.662,279
+jetson,int8,0.181,0.625,189

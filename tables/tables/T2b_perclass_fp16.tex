@@ -1,0 +1,22 @@
+\begin{table*}[t]
+\centering
+\caption{Per-pathology AUROC at FP16 (the lossless / Pareto-optimal precision) for the five competition classes, both deployment targets. Cardiomegaly gains are small and not statistically significant (see paired-bootstrap table).}
+\label{tab:auroc_perclass_fp16}
+\begin{tabular}{lcccccc}
+\toprule
+Variant & Cardiomegaly & Edema & Consolidation & Atelectasis & Pleural Effusion & MACRO-5 \\
+\midrule
+\multicolumn{7}{l}{\textbf{Legion (RTX 5070 Ti)}} \\
+Baseline (no KD) & 0.7850 & 0.8473 & 0.8070 & 0.6871 & 0.8490 & 0.7951 \\
+Logit KD & 0.8104 & 0.8984 & 0.9254 & 0.7698 & 0.9191 & 0.8646 \\
+Feature KD & 0.8122 & 0.8947 & 0.8915 & 0.7859 & 0.9062 & 0.8581 \\
+Feature+Hard KD & 0.7861 & 0.9065 & 0.9097 & 0.7633 & 0.9058 & 0.8543 \\
+\midrule
+\multicolumn{7}{l}{\textbf{Jetson Orin Nano}} \\
+Baseline (no KD) & 0.7861 & 0.8470 & 0.8073 & 0.6862 & 0.8499 & 0.7953 \\
+Logit KD & 0.8106 & 0.8981 & 0.9254 & 0.7695 & 0.9194 & 0.8646 \\
+Feature KD & 0.8118 & 0.8944 & 0.8911 & 0.7868 & 0.9057 & 0.8580 \\
+Feature+Hard KD & 0.7861 & 0.9061 & 0.9088 & 0.7634 & 0.9057 & 0.8540 \\
+\bottomrule
+\end{tabular}
+\end{table*}

@@ -1,0 +1,19 @@
+\begin{table}[t]
+\centering
+\caption{Macro-averaged AUROC over the five CheXpert competition pathologies (primary metric), per precision and device. Teacher (ViT-B/16, FP32 PyTorch) shown as the accuracy ceiling.}
+\label{tab:auroc_macro5}
+\begin{tabular}{lcccccc}
+\toprule
+ & \multicolumn{3}{c}{Legion} & \multicolumn{3}{c}{Jetson Orin Nano} \\
+\cmidrule(lr){2-4} \cmidrule(lr){5-7}
+Model & FP32 & FP16 & INT8 & FP32 & FP16 & INT8 \\
+\midrule
+\textit{ViT-B/16 (teacher)} & 0.8675 & \multicolumn{5}{c}{\textit{-- (FP32 PyTorch ceiling)}} \\
+\midrule
+Baseline (no KD) & 0.7954 & 0.7951 & 0.7275 & 0.7954 & 0.7953 & 0.7386 \\
+Logit KD & 0.8646 & 0.8646 & 0.8299 & 0.8644 & 0.8646 & 0.8327 \\
+Feature KD & 0.8577 & 0.8581 & 0.7859 & 0.8579 & 0.8580 & 0.7931 \\
+Feature+Hard KD & 0.8545 & 0.8543 & 0.7884 & 0.8542 & 0.8540 & 0.7956 \\
+\bottomrule
+\end{tabular}
+\end{table}

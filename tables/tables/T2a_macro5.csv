@@ -1,0 +1,6 @@
+variant,legion_FP32,legion_FP16,legion_INT8,jetson_FP32,jetson_FP16,jetson_INT8
+teacher_ViT-B16,0.8675,--,--,--,--,--
+baseline,0.7954,0.7951,0.7275,0.7954,0.7953,0.7386
+logitKD,0.8646,0.8646,0.8299,0.8644,0.8646,0.8327
+featureKD,0.8577,0.8581,0.7859,0.8579,0.8580,0.7931
+featureHardKD,0.8545,0.8543,0.7884,0.8542,0.8540,0.7956

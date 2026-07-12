@@ -1,0 +1,361 @@
+device,variant,precision,label,auroc
+legion,baseline,FP32,No Finding,0.8406
+legion,baseline,FP32,Enlarged Cardiomediastinum,0.5641
+legion,baseline,FP32,Cardiomegaly,0.7844
+legion,baseline,FP32,Lung Opacity,0.8428
+legion,baseline,FP32,Lung Lesion,0.0472
+legion,baseline,FP32,Edema,0.8479
+legion,baseline,FP32,Consolidation,0.8063
+legion,baseline,FP32,Pneumonia,0.4812
+legion,baseline,FP32,Atelectasis,0.6880
+legion,baseline,FP32,Pneumothorax,0.6731
+legion,baseline,FP32,Pleural Effusion,0.8507
+legion,baseline,FP32,Pleural Other,0.4120
+legion,baseline,FP32,Support Devices,0.7801
+legion,baseline,FP32,MACRO (14),0.6630
+legion,baseline,FP32,MACRO (5 competition),0.7954
+legion,baseline,FP16,No Finding,0.8404
+legion,baseline,FP16,Enlarged Cardiomediastinum,0.5623
+legion,baseline,FP16,Cardiomegaly,0.7850
+legion,baseline,FP16,Lung Opacity,0.8429
+legion,baseline,FP16,Lung Lesion,0.0472
+legion,baseline,FP16,Edema,0.8473
+legion,baseline,FP16,Consolidation,0.8070
+legion,baseline,FP16,Pneumonia,0.4845
+legion,baseline,FP16,Atelectasis,0.6871
+legion,baseline,FP16,Pneumothorax,0.6748
+legion,baseline,FP16,Pleural Effusion,0.8490
+legion,baseline,FP16,Pleural Other,0.4120
+legion,baseline,FP16,Support Devices,0.7797
+legion,baseline,FP16,MACRO (14),0.6630
+legion,baseline,FP16,MACRO (5 competition),0.7951
+legion,baseline,INT8,No Finding,0.7593
+legion,baseline,INT8,Enlarged Cardiomediastinum,0.6025
+legion,baseline,INT8,Cardiomegaly,0.6844
+legion,baseline,INT8,Lung Opacity,0.7484
+legion,baseline,INT8,Lung Lesion,0.0129
+legion,baseline,INT8,Edema,0.8115
+legion,baseline,INT8,Consolidation,0.6719
+legion,baseline,INT8,Pneumonia,0.5514
+legion,baseline,INT8,Atelectasis,0.6603
+legion,baseline,INT8,Pneumothorax,0.6269
+legion,baseline,INT8,Pleural Effusion,0.8093
+legion,baseline,INT8,Pleural Other,0.0579
+legion,baseline,INT8,Support Devices,0.7145
+legion,baseline,INT8,MACRO (14),0.5932
+legion,baseline,INT8,MACRO (5 competition),0.7275
+legion,logitKD,FP32,No Finding,0.8793
+legion,logitKD,FP32,Enlarged Cardiomediastinum,0.6159
+legion,logitKD,FP32,Cardiomegaly,0.8104
+legion,logitKD,FP32,Lung Opacity,0.8936
+legion,logitKD,FP32,Lung Lesion,0.1073
+legion,logitKD,FP32,Edema,0.8984
+legion,logitKD,FP32,Consolidation,0.9252
+legion,logitKD,FP32,Pneumonia,0.6388
+legion,logitKD,FP32,Atelectasis,0.7700
+legion,logitKD,FP32,Pneumothorax,0.7705
+legion,logitKD,FP32,Pleural Effusion,0.9190
+legion,logitKD,FP32,Pleural Other,0.9013
+legion,logitKD,FP32,Support Devices,0.8494
+legion,logitKD,FP32,MACRO (14),0.7676
+legion,logitKD,FP32,MACRO (5 competition),0.8646
+legion,logitKD,FP16,No Finding,0.8794
+legion,logitKD,FP16,Enlarged Cardiomediastinum,0.6155
+legion,logitKD,FP16,Cardiomegaly,0.8104
+legion,logitKD,FP16,Lung Opacity,0.8934
+legion,logitKD,FP16,Lung Lesion,0.1073
+legion,logitKD,FP16,Edema,0.8984
+legion,logitKD,FP16,Consolidation,0.9254
+legion,logitKD,FP16,Pneumonia,0.6410
+legion,logitKD,FP16,Atelectasis,0.7698
+legion,logitKD,FP16,Pneumothorax,0.7688
+legion,logitKD,FP16,Pleural Effusion,0.9191
+legion,logitKD,FP16,Pleural Other,0.9013
+legion,logitKD,FP16,Support Devices,0.8483
+legion,logitKD,FP16,MACRO (14),0.7675
+legion,logitKD,FP16,MACRO (5 competition),0.8646
+legion,logitKD,INT8,No Finding,0.8831
+legion,logitKD,INT8,Enlarged Cardiomediastinum,0.6808
+legion,logitKD,INT8,Cardiomegaly,0.7520
+legion,logitKD,INT8,Lung Opacity,0.8775
+legion,logitKD,INT8,Lung Lesion,0.1717
+legion,logitKD,INT8,Edema,0.8735
+legion,logitKD,INT8,Consolidation,0.8619
+legion,logitKD,INT8,Pneumonia,0.7207
+legion,logitKD,INT8,Atelectasis,0.7781
+legion,logitKD,INT8,Pneumothorax,0.6986
+legion,logitKD,INT8,Pleural Effusion,0.8839
+legion,logitKD,INT8,Pleural Other,0.8755
+legion,logitKD,INT8,Support Devices,0.8288
+legion,logitKD,INT8,MACRO (14),0.7605
+legion,logitKD,INT8,MACRO (5 competition),0.8299
+legion,featureKD,FP32,No Finding,0.8715
+legion,featureKD,FP32,Enlarged Cardiomediastinum,0.6230
+legion,featureKD,FP32,Cardiomegaly,0.8117
+legion,featureKD,FP32,Lung Opacity,0.9009
+legion,featureKD,FP32,Lung Lesion,0.1073
+legion,featureKD,FP32,Edema,0.8941
+legion,featureKD,FP32,Consolidation,0.8912
+legion,featureKD,FP32,Pneumonia,0.6383
+legion,featureKD,FP32,Atelectasis,0.7857
+legion,featureKD,FP32,Pneumothorax,0.7428
+legion,featureKD,FP32,Pleural Effusion,0.9061
+legion,featureKD,FP32,Pleural Other,0.9399
+legion,featureKD,FP32,Support Devices,0.8424
+legion,featureKD,FP32,MACRO (14),0.7658
+legion,featureKD,FP32,MACRO (5 competition),0.8577
+legion,featureKD,FP16,No Finding,0.8722
+legion,featureKD,FP16,Enlarged Cardiomediastinum,0.6224
+legion,featureKD,FP16,Cardiomegaly,0.8122
+legion,featureKD,FP16,Lung Opacity,0.9011
+legion,featureKD,FP16,Lung Lesion,0.1073
+legion,featureKD,FP16,Edema,0.8947
+legion,featureKD,FP16,Consolidation,0.8915
+legion,featureKD,FP16,Pneumonia,0.6350
+legion,featureKD,FP16,Atelectasis,0.7859
+legion,featureKD,FP16,Pneumothorax,0.7428
+legion,featureKD,FP16,Pleural Effusion,0.9062
+legion,featureKD,FP16,Pleural Other,0.9356
+legion,featureKD,FP16,Support Devices,0.8429
+legion,featureKD,FP16,MACRO (14),0.7654
+legion,featureKD,FP16,MACRO (5 competition),0.8581
+legion,featureKD,INT8,No Finding,0.7370
+legion,featureKD,INT8,Enlarged Cardiomediastinum,0.5341
+legion,featureKD,INT8,Cardiomegaly,0.7877
+legion,featureKD,INT8,Lung Opacity,0.8406
+legion,featureKD,INT8,Lung Lesion,0.0172
+legion,featureKD,INT8,Edema,0.7940
+legion,featureKD,INT8,Consolidation,0.7677
+legion,featureKD,INT8,Pneumonia,0.6986
+legion,featureKD,INT8,Atelectasis,0.7543
+legion,featureKD,INT8,Pneumothorax,0.6803
+legion,featureKD,INT8,Pleural Effusion,0.8257
+legion,featureKD,INT8,Pleural Other,0.9399
+legion,featureKD,INT8,Support Devices,0.7023
+legion,featureKD,INT8,MACRO (14),0.6984
+legion,featureKD,INT8,MACRO (5 competition),0.7859
+legion,featureHardKD,FP32,No Finding,0.8812
+legion,featureHardKD,FP32,Enlarged Cardiomediastinum,0.5761
+legion,featureHardKD,FP32,Cardiomegaly,0.7857
+legion,featureHardKD,FP32,Lung Opacity,0.8863
+legion,featureHardKD,FP32,Lung Lesion,0.2918
+legion,featureHardKD,FP32,Edema,0.9068
+legion,featureHardKD,FP32,Consolidation,0.9104
+legion,featureHardKD,FP32,Pneumonia,0.7329
+legion,featureHardKD,FP32,Atelectasis,0.7641
+legion,featureHardKD,FP32,Pneumothorax,0.7080
+legion,featureHardKD,FP32,Pleural Effusion,0.9057
+legion,featureHardKD,FP32,Pleural Other,0.8455
+legion,featureHardKD,FP32,Support Devices,0.8707
+legion,featureHardKD,FP32,MACRO (14),0.7742
+legion,featureHardKD,FP32,MACRO (5 competition),0.8545
+legion,featureHardKD,FP16,No Finding,0.8809
+legion,featureHardKD,FP16,Enlarged Cardiomediastinum,0.5762
+legion,featureHardKD,FP16,Cardiomegaly,0.7861
+legion,featureHardKD,FP16,Lung Opacity,0.8864
+legion,featureHardKD,FP16,Lung Lesion,0.2918
+legion,featureHardKD,FP16,Edema,0.9065
+legion,featureHardKD,FP16,Consolidation,0.9097
+legion,featureHardKD,FP16,Pneumonia,0.7315
+legion,featureHardKD,FP16,Atelectasis,0.7633
+legion,featureHardKD,FP16,Pneumothorax,0.7093
+legion,featureHardKD,FP16,Pleural Effusion,0.9058
+legion,featureHardKD,FP16,Pleural Other,0.8498
+legion,featureHardKD,FP16,Support Devices,0.8709
+legion,featureHardKD,FP16,MACRO (14),0.7745
+legion,featureHardKD,FP16,MACRO (5 competition),0.8543
+legion,featureHardKD,INT8,No Finding,0.8420
+legion,featureHardKD,INT8,Enlarged Cardiomediastinum,0.6800
+legion,featureHardKD,INT8,Cardiomegaly,0.6798
+legion,featureHardKD,INT8,Lung Opacity,0.8275
+legion,featureHardKD,INT8,Lung Lesion,0.1888
+legion,featureHardKD,INT8,Edema,0.8536
+legion,featureHardKD,INT8,Consolidation,0.8439
+legion,featureHardKD,INT8,Pneumonia,0.5567
+legion,featureHardKD,INT8,Atelectasis,0.6930
+legion,featureHardKD,INT8,Pneumothorax,0.7113
+legion,featureHardKD,INT8,Pleural Effusion,0.8715
+legion,featureHardKD,INT8,Pleural Other,0.6738
+legion,featureHardKD,INT8,Support Devices,0.7859
+legion,featureHardKD,INT8,MACRO (14),0.7083
+legion,featureHardKD,INT8,MACRO (5 competition),0.7884
+jetson,baseline,FP32,No Finding,0.8406
+jetson,baseline,FP32,Enlarged Cardiomediastinum,0.5648
+jetson,baseline,FP32,Cardiomegaly,0.7855
+jetson,baseline,FP32,Lung Opacity,0.8426
+jetson,baseline,FP32,Lung Lesion,0.0472
+jetson,baseline,FP32,Edema,0.8476
+jetson,baseline,FP32,Consolidation,0.8072
+jetson,baseline,FP32,Pneumonia,0.4823
+jetson,baseline,FP32,Atelectasis,0.6873
+jetson,baseline,FP32,Pneumothorax,0.6742
+jetson,baseline,FP32,Pleural Effusion,0.8496
+jetson,baseline,FP32,Pleural Other,0.4120
+jetson,baseline,FP32,Support Devices,0.7793
+jetson,baseline,FP32,MACRO (14),0.6631
+jetson,baseline,FP32,MACRO (5 competition),0.7954
+jetson,baseline,FP16,No Finding,0.8408
+jetson,baseline,FP16,Enlarged Cardiomediastinum,0.5632
+jetson,baseline,FP16,Cardiomegaly,0.7861
+jetson,baseline,FP16,Lung Opacity,0.8419
+jetson,baseline,FP16,Lung Lesion,0.0472
+jetson,baseline,FP16,Edema,0.8470
+jetson,baseline,FP16,Consolidation,0.8073
+jetson,baseline,FP16,Pneumonia,0.4834
+jetson,baseline,FP16,Atelectasis,0.6862
+jetson,baseline,FP16,Pneumothorax,0.6715
+jetson,baseline,FP16,Pleural Effusion,0.8499
+jetson,baseline,FP16,Pleural Other,0.4120
+jetson,baseline,FP16,Support Devices,0.7792
+jetson,baseline,FP16,MACRO (14),0.6628
+jetson,baseline,FP16,MACRO (5 competition),0.7953
+jetson,baseline,INT8,No Finding,0.7301
+jetson,baseline,INT8,Enlarged Cardiomediastinum,0.5827
+jetson,baseline,INT8,Cardiomegaly,0.7237
+jetson,baseline,INT8,Lung Opacity,0.7400
+jetson,baseline,INT8,Lung Lesion,0.0086
+jetson,baseline,INT8,Edema,0.8213
+jetson,baseline,INT8,Consolidation,0.6927
+jetson,baseline,INT8,Pneumonia,0.6250
+jetson,baseline,INT8,Atelectasis,0.6529
+jetson,baseline,INT8,Pneumothorax,0.6792
+jetson,baseline,INT8,Pleural Effusion,0.8025
+jetson,baseline,INT8,Pleural Other,0.2747
+jetson,baseline,INT8,Support Devices,0.7096
+jetson,baseline,INT8,MACRO (14),0.6187
+jetson,baseline,INT8,MACRO (5 competition),0.7386
+jetson,logitKD,FP32,No Finding,0.8797
+jetson,logitKD,FP32,Enlarged Cardiomediastinum,0.6167
+jetson,logitKD,FP32,Cardiomegaly,0.8107
+jetson,logitKD,FP32,Lung Opacity,0.8929
+jetson,logitKD,FP32,Lung Lesion,0.1073
+jetson,logitKD,FP32,Edema,0.8984
+jetson,logitKD,FP32,Consolidation,0.9249
+jetson,logitKD,FP32,Pneumonia,0.6416
+jetson,logitKD,FP32,Atelectasis,0.7691
+jetson,logitKD,FP32,Pneumothorax,0.7683
+jetson,logitKD,FP32,Pleural Effusion,0.9189
+jetson,logitKD,FP32,Pleural Other,0.9013
+jetson,logitKD,FP32,Support Devices,0.8486
+jetson,logitKD,FP32,MACRO (14),0.7676
+jetson,logitKD,FP32,MACRO (5 competition),0.8644
+jetson,logitKD,FP16,No Finding,0.8797
+jetson,logitKD,FP16,Enlarged Cardiomediastinum,0.6159
+jetson,logitKD,FP16,Cardiomegaly,0.8106
+jetson,logitKD,FP16,Lung Opacity,0.8933
+jetson,logitKD,FP16,Lung Lesion,0.1073
+jetson,logitKD,FP16,Edema,0.8981
+jetson,logitKD,FP16,Consolidation,0.9254
+jetson,logitKD,FP16,Pneumonia,0.6397
+jetson,logitKD,FP16,Atelectasis,0.7695
+jetson,logitKD,FP16,Pneumothorax,0.7677
+jetson,logitKD,FP16,Pleural Effusion,0.9194
+jetson,logitKD,FP16,Pleural Other,0.9013
+jetson,logitKD,FP16,Support Devices,0.8490
+jetson,logitKD,FP16,MACRO (14),0.7674
+jetson,logitKD,FP16,MACRO (5 competition),0.8646
+jetson,logitKD,INT8,No Finding,0.8714
+jetson,logitKD,INT8,Enlarged Cardiomediastinum,0.6716
+jetson,logitKD,INT8,Cardiomegaly,0.7491
+jetson,logitKD,INT8,Lung Opacity,0.8670
+jetson,logitKD,INT8,Lung Lesion,0.1116
+jetson,logitKD,INT8,Edema,0.8912
+jetson,logitKD,INT8,Consolidation,0.8563
+jetson,logitKD,INT8,Pneumonia,0.7467
+jetson,logitKD,INT8,Atelectasis,0.7759
+jetson,logitKD,INT8,Pneumothorax,0.6886
+jetson,logitKD,INT8,Pleural Effusion,0.8910
+jetson,logitKD,INT8,Pleural Other,0.9528
+jetson,logitKD,INT8,Support Devices,0.8313
+jetson,logitKD,INT8,MACRO (14),0.7619
+jetson,logitKD,INT8,MACRO (5 competition),0.8327
+jetson,featureKD,FP32,No Finding,0.8718
+jetson,featureKD,FP32,Enlarged Cardiomediastinum,0.6228
+jetson,featureKD,FP32,Cardiomegaly,0.8118
+jetson,featureKD,FP32,Lung Opacity,0.9007
+jetson,featureKD,FP32,Lung Lesion,0.1073
+jetson,featureKD,FP32,Edema,0.8939
+jetson,featureKD,FP32,Consolidation,0.8912
+jetson,featureKD,FP32,Pneumonia,0.6383
+jetson,featureKD,FP32,Atelectasis,0.7869
+jetson,featureKD,FP32,Pneumothorax,0.7428
+jetson,featureKD,FP32,Pleural Effusion,0.9059
+jetson,featureKD,FP32,Pleural Other,0.9356
+jetson,featureKD,FP32,Support Devices,0.8424
+jetson,featureKD,FP32,MACRO (14),0.7655
+jetson,featureKD,FP32,MACRO (5 competition),0.8579
+jetson,featureKD,FP16,No Finding,0.8717
+jetson,featureKD,FP16,Enlarged Cardiomediastinum,0.6222
+jetson,featureKD,FP16,Cardiomegaly,0.8118
+jetson,featureKD,FP16,Lung Opacity,0.9013
+jetson,featureKD,FP16,Lung Lesion,0.1073
+jetson,featureKD,FP16,Edema,0.8944
+jetson,featureKD,FP16,Consolidation,0.8911
+jetson,featureKD,FP16,Pneumonia,0.6388
+jetson,featureKD,FP16,Atelectasis,0.7868
+jetson,featureKD,FP16,Pneumothorax,0.7417
+jetson,featureKD,FP16,Pleural Effusion,0.9057
+jetson,featureKD,FP16,Pleural Other,0.9313
+jetson,featureKD,FP16,Support Devices,0.8425
+jetson,featureKD,FP16,MACRO (14),0.7651
+jetson,featureKD,FP16,MACRO (5 competition),0.8580
+jetson,featureKD,INT8,No Finding,0.8338
+jetson,featureKD,INT8,Enlarged Cardiomediastinum,0.5511
+jetson,featureKD,INT8,Cardiomegaly,0.7685
+jetson,featureKD,INT8,Lung Opacity,0.8198
+jetson,featureKD,INT8,Lung Lesion,0.0773
+jetson,featureKD,INT8,Edema,0.8297
+jetson,featureKD,INT8,Consolidation,0.7874
+jetson,featureKD,INT8,Pneumonia,0.6864
+jetson,featureKD,INT8,Atelectasis,0.7506
+jetson,featureKD,INT8,Pneumothorax,0.5924
+jetson,featureKD,INT8,Pleural Effusion,0.8295
+jetson,featureKD,INT8,Pleural Other,0.9013
+jetson,featureKD,INT8,Support Devices,0.6749
+jetson,featureKD,INT8,MACRO (14),0.7002
+jetson,featureKD,INT8,MACRO (5 competition),0.7931
+jetson,featureHardKD,FP32,No Finding,0.8809
+jetson,featureHardKD,FP32,Enlarged Cardiomediastinum,0.5767
+jetson,featureHardKD,FP32,Cardiomegaly,0.7853
+jetson,featureHardKD,FP32,Lung Opacity,0.8867
+jetson,featureHardKD,FP32,Lung Lesion,0.2876
+jetson,featureHardKD,FP32,Edema,0.9065
+jetson,featureHardKD,FP32,Consolidation,0.9098
+jetson,featureHardKD,FP32,Pneumonia,0.7317
+jetson,featureHardKD,FP32,Atelectasis,0.7636
+jetson,featureHardKD,FP32,Pneumothorax,0.7080
+jetson,featureHardKD,FP32,Pleural Effusion,0.9057
+jetson,featureHardKD,FP32,Pleural Other,0.8498
+jetson,featureHardKD,FP32,Support Devices,0.8706
+jetson,featureHardKD,FP32,MACRO (14),0.7741
+jetson,featureHardKD,FP32,MACRO (5 competition),0.8542
+jetson,featureHardKD,FP16,No Finding,0.8812
+jetson,featureHardKD,FP16,Enlarged Cardiomediastinum,0.5764
+jetson,featureHardKD,FP16,Cardiomegaly,0.7861
+jetson,featureHardKD,FP16,Lung Opacity,0.8862
+jetson,featureHardKD,FP16,Lung Lesion,0.2940
+jetson,featureHardKD,FP16,Edema,0.9061
+jetson,featureHardKD,FP16,Consolidation,0.9088
+jetson,featureHardKD,FP16,Pneumonia,0.7306
+jetson,featureHardKD,FP16,Atelectasis,0.7634
+jetson,featureHardKD,FP16,Pneumothorax,0.7069
+jetson,featureHardKD,FP16,Pleural Effusion,0.9057
+jetson,featureHardKD,FP16,Pleural Other,0.8541
+jetson,featureHardKD,FP16,Support Devices,0.8708
+jetson,featureHardKD,FP16,MACRO (14),0.7746
+jetson,featureHardKD,FP16,MACRO (5 competition),0.8540
+jetson,featureHardKD,INT8,No Finding,0.8179
+jetson,featureHardKD,INT8,Enlarged Cardiomediastinum,0.7426
+jetson,featureHardKD,INT8,Cardiomegaly,0.7008
+jetson,featureHardKD,INT8,Lung Opacity,0.8349
+jetson,featureHardKD,INT8,Lung Lesion,0.1845
+jetson,featureHardKD,INT8,Edema,0.8467
+jetson,featureHardKD,INT8,Consolidation,0.8242
+jetson,featureHardKD,INT8,Pneumonia,0.6067
+jetson,featureHardKD,INT8,Atelectasis,0.7353
+jetson,featureHardKD,INT8,Pneumothorax,0.6244
+jetson,featureHardKD,INT8,Pleural Effusion,0.8712
+jetson,featureHardKD,INT8,Pleural Other,0.9442
+jetson,featureHardKD,INT8,Support Devices,0.7802
+jetson,featureHardKD,INT8,MACRO (14),0.7318
+jetson,featureHardKD,INT8,MACRO (5 competition),0.7956
